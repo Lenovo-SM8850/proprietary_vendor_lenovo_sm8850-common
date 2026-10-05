@@ -14,7 +14,8 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf2-V1-ndk",
+    name: "vendor.qti.hardware.perf2-V1-ndk-system",
+    stem: "vendor.qti.hardware.perf2-V1-ndk",
     owner: "lenovo",
     strip: {
         none: true,
@@ -19174,7 +19175,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "vendor.qti.hardware.perf@2.2",
                 "vendor.qti.hardware.perf@2.3",
-                "vendor.qti.hardware.perf2-V1-ndk",
+                "vendor.qti.hardware.perf2-V1-ndk-system",
                 "libhidlbase",
                 "libbase",
                 "libbinder_ndk",
