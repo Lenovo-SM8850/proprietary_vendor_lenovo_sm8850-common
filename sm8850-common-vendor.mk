@@ -256,6 +256,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dlsc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlsc.rc \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dvs-aidl-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
@@ -291,6 +293,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/snapdragon_services.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snapdragon_services.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.lenovo.hardware.battery-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.battery-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.lenovo.hardware.display-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.display-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.lenovo.hardware.ufs-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.ufs-service.rc \
@@ -342,6 +345,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku2.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_sku2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku2_vendor.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v1_vendor.xml \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku2.xml \
@@ -978,8 +982,10 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.3 \
     coresight_reset_source_sink \
     diag-router \
+    dms-service.xml \
     dppdaemon \
     dspservice \
+    dvs-aidl-service.xml \
     edgnss-daemon \
     fm_hci.xml \
     ftm_fm_lib \
@@ -1050,11 +1056,21 @@ PRODUCT_PACKAGES += \
     libcert_parse.wpa_s \
     libchilog \
     libclstc_gcp_adapter \
+    libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
+    libcodec2_store_dolby \
     libcpion \
+    libdapparamstorage \
     libdataitems \
+    libdeccfg \
     libdepthcomputation \
     libdepthmapwrapper \
     libdigital-dimming \
+    libdlbdsservice \
+    libdlbpreg \
+    libdlbvolaidl \
+    libdmshal \
+    libdolbyclstc \
     libdpp_manager \
     libdsd2pcm \
     libdspCV_skel \
@@ -1279,6 +1295,11 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby.dms.service \
+    vendor.dolby.hardware.dms@2.0 \
+    vendor.dolby.media.c2-default-service-dax \
+    vendor.dolby.media.c2-default-service-dax.xml \
     vendor.lenovo.hardware.battery-V5-ndk \
     vendor.lenovo.hardware.battery-service \
     vendor.lenovo.hardware.battery-service.xml \
@@ -1494,7 +1515,8 @@ PRODUCT_PACKAGES += \
     xtwifi-client
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
+    vendor_lib64_libq3dtools_adreno_so
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
