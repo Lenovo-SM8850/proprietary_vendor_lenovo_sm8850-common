@@ -1243,6 +1243,7 @@ PRODUCT_PACKAGES += \
     libnicm_utils \
     libnicm_vh \
     libnspextensioncopyservice \
+    libnspextensionfrcservice \
     libnspextensiongenericqnnservice \
     libnspextensionsuperresolutionservice \
     libnspframework \
@@ -1482,6 +1483,7 @@ PRODUCT_PACKAGES += \
     libDLDPP_skel \
     libHexlpQnnHtp \
     libHexlpQnnSystem \
+    libVppFrcQnnHtp \
     libapn_dsp_skel \
     libbitml_nsp_81na_skel \
     libbitml_nsp_skel \
