@@ -89,6 +89,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/odm/lib64/outconvfiltcoeffcq2x2.bin:$(TARGET_COPY_OUT_ODM)/lib64/outconvfiltcoeffcq2x2.bin \
     vendor/lenovo/sm8850-common/proprietary/odm/lib64/outconvfiltcoeffcq4x4.bin:$(TARGET_COPY_OUT_ODM)/lib64/outconvfiltcoeffcq4x4.bin \
     vendor/lenovo/sm8850-common/proprietary/odm/lib64/outconvfiltcoeffqpd4x4.bin:$(TARGET_COPY_OUT_ODM)/lib64/outconvfiltcoeffqpd4x4.bin \
+    vendor/lenovo/sm8850-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/lenovo/sm8850-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
+    vendor/lenovo/sm8850-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
+    vendor/lenovo/sm8850-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/5GNR_LTE_CN_V9.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/5GNR_LTE_CN_V9.cfg \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/FIT_V24_2_volte_full_ip.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/FIT_V24_2_volte_full_ip.cfg \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/FIT_V24_3_audio.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/FIT_V24_3_audio.cfg \
@@ -1613,8 +1617,31 @@ PRODUCT_PACKAGES += \
     libmmparserextractor \
     libmmosal \
     libmmparser_lite \
+    libmmrtpdecoder \
+    libmmrtpencoder \
+    libwfdavenhancements \
+    libwfdclient \
+    libwfdcommonutils \
+    libwfdconfigutils \
+    libwfddisplayconfig \
+    libwfdmminterface \
+    libwfdmmsink \
+    libwfdmmsrc_system \
+    libwfdnative \
+    libwfdrtsp \
+    libwfdservice \
+    libwfdsinksm \
+    libwfduibcinterface \
+    libwfduibcsink \
+    libwfduibcsinkinterface \
+    libwfduibcsrc \
+    libwfduibcsrcinterface \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk-system \
     com.google.android.widevine-13130248 \
     ConnectionSecurityService \
+    WfdService \
+    WfdCommon \
     Manifest_IListenSoundModel.xml \
     android.hardware.drm-service.xml \
     android.hardware.gatekeeper-service-qti.xml \
@@ -1768,9 +1795,14 @@ PRODUCT_PACKAGES += \
     wdsdaemon \
     wfdvndservice \
     wifidisplayhalservice \
-    xtra-daemon
+    xtra-daemon \
+    wfdservice64
 
 PRODUCT_PACKAGES += \
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
