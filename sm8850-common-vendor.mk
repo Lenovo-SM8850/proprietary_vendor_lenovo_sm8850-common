@@ -255,6 +255,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dlsc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlsc.rc \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.qt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qt-service.rc \
@@ -284,6 +285,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/snapdragon_services.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snapdragon_services.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.lenovo.hardware.battery-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.battery-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.lenovo.hardware.display-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.display-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.lenovo.hardware.ufs-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.ufs-service.rc \
@@ -343,6 +345,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v1.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v1_vendor.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2.xml \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku2.xml \
@@ -943,6 +946,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/rfs/rfs_symlinks:$(TARGET_COPY_OUT_VENDOR)/rfs/rfs_symlinks
 
 PRODUCT_PACKAGES += \
+    libdolbyeffect \
+    libdolbyui \
     vendor.qti.hardware.perf2-V1-ndk-system \
     com.qti.sensor.imx481 \
     com.qti.sensor.imx563 \
@@ -1090,17 +1095,27 @@ PRODUCT_PACKAGES += \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
     libcneapiclient \
+    libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
+    libcodec2_store_dolby \
     libcolor-default \
     libconfigdb \
     libcpion \
+    libdapparamstorage \
     libdataitems \
+    libdeccfg \
     libdepthcomputation \
     libdev_bt \
     libdiag \
     libdiagjni \
     libdigital-dimming \
     libdisplayskuutils \
+    libdlbdsservice \
+    libdlbpreg \
     libdmap_consent_sdk \
+    libdmshal \
+    libdolbyclstc \
+    libdolbyui \
     libdpp_manager \
     libdrmMinimalfsHelper \
     libdrmfs \
@@ -1461,6 +1476,7 @@ PRODUCT_PACKAGES += \
     libsvDescMatch_dsp \
     libsvswdsp \
     libsvswdsp_skel \
+    libdlbvolaidl \
     vendor.aac.hardware.richtap.vibrator-V1-ndk \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
@@ -1469,6 +1485,8 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.lenovo.hardware.battery-V5-ndk \
     vendor.lenovo.hardware.display-V1-ndk \
     vendor.lenovo.hardware.touchscreen-V5-ndk \
@@ -1674,6 +1692,7 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
     cacert-saidl.xml \
+    dms-service.xml \
     fm_hci.xml \
     manifest_btaudiocoreservices_qti.xml \
     qasr_vintf.xml \
@@ -1681,6 +1700,7 @@ PRODUCT_PACKAGES += \
     qspa-modem.xml \
     qspa-nav.xml \
     snapdragon_services.xml \
+    vendor.dolby.media.c2-default-service-dax.xml \
     vendor.lenovo.hardware.battery-service.xml \
     vendor.lenovo.hardware.display-service.xml \
     vendor.lenovo.hardware.touchscreen-service.xml \
@@ -1733,6 +1753,8 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secretkeeper-service-qti \
     android.hardware.weaver-service-spu-qti \
     qconfigservice \
+    vendor.dolby.dms.service \
+    vendor.dolby.media.c2-default-service-dax \
     vendor.lenovo.hardware.battery-service \
     vendor.lenovo.hardware.display-service \
     vendor.lenovo.hardware.ufs-service \
