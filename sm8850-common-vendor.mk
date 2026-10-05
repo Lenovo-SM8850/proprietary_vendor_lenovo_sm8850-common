@@ -1032,6 +1032,7 @@ PRODUCT_PACKAGES += \
     libTrustedInputUtils \
     libVirtClientInterface \
     libVkLayer_ADRENO_qprofiler \
+    libVppFrcQnnHtp \
     libaacvibrator \
     libapn_dsp_skel \
     libarmemlog \
@@ -1123,6 +1124,7 @@ PRODUCT_PACKAGES += \
     libmodem_device_ids \
     libmpbase \
     libnspextensioncopyservice \
+    libnspextensionfrcservice \
     libnspextensiongenericqnnprovider \
     libnspextensiongenericqnnservice \
     libnspextensionsuperresolutionservice \
