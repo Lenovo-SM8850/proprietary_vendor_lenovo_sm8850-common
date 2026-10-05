@@ -20017,8 +20017,8 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libbinder_ndk",
-                "vendor.qti.qspmhal-V1-ndk",
-                "vendor.qti.snapdragonServices-V2-ndk",
+                "vendor.qti.qspmhal-V1-ndk-system",
+                "vendor.qti.snapdragonServices-V2-ndk-system",
                 "libc++",
                 "libc",
                 "libm",
@@ -20713,7 +20713,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal-V1-ndk",
+    name: "vendor.qti.qspmhal-V1-ndk-system",
+    stem: "vendor.qti.qspmhal-V1-ndk",
     owner: "lenovo",
     strip: {
         none: true,
@@ -20767,7 +20768,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.snapdragonServices-V2-ndk",
+    name: "vendor.qti.snapdragonServices-V2-ndk-system",
+    stem: "vendor.qti.snapdragonServices-V2-ndk",
     owner: "lenovo",
     strip: {
         none: true,
