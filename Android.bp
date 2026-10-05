@@ -39,7 +39,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdolbyui",
+    name: "libdolbyui-system",
+    stem: "libdolbyui",
     owner: "lenovo",
     strip: {
         none: true,

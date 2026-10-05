@@ -947,7 +947,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libdolbyeffect \
-    libdolbyui \
+    libdolbyui-system \
     vendor.qti.hardware.perf2-V1-ndk-system \
     com.qti.sensor.imx481 \
     com.qti.sensor.imx563 \
