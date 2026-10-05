@@ -1,0 +1,10 @@
+on early-boot
+    start nvram_cc
+
+service nvram_cc /vendor/bin/nvram_cc
+    class core
+    user root
+    group root system vendor_qti_diag sdcard_rw cache
+    seclabel u:r:hwdiag:s0
+    oneshot
+
