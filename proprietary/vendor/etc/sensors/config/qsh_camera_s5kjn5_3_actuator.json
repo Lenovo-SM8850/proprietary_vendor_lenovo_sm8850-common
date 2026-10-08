@@ -1,7 +1,7 @@
 {
   "config": {
     "hw_platform": ["MTP", "Surf", "RCM", "QRD"],
-    "soc_id": ["618", "639", "660", "661"]
+    "soc_id": ["618", "639", "660", "661", "722", "723"]
   },
   "qsh_camera_s5kjn5_3_actuator":{
     "owner": "qsh_camera_s5kjn5_3_actuator",

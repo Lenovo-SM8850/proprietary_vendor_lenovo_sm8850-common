@@ -102,7 +102,14 @@
             // Default value of this wait time is 150ms, even if this value is not set in this file.
             // Lower wait time might increase the thread activity in some corner cases.
             // Higher wait time might affect stop latency in some cases.
-            "dec_bufferpool_fence_wait_time_ms": 150
+            "dec_bufferpool_fence_wait_time_ms": 150,
+            // Mode for decoder metadata generation
+            // it is bitmask.
+            //  0x0: disable
+            //  0x1: enable only for 8bit content
+            //  0x2: enable for 8/10bit SDR and HLG
+            //  0x3: enable for all 8/10 bit content(including HDR10/+)
+            "dec_dolby_metadata_gen" : 0
         },
 
         "ProsightModeBitrateTable": [
@@ -121,6 +128,7 @@
         // list of codec plugin libraries to be loaded into codec registry
         "QC2CodecPlugins": [
             "libqcodec2_imgtxrfilter.so"
+            //"libqcodec2_dolbymdgenfilter.so"
         ],
 
         "QC2PreProcessingFilters": [

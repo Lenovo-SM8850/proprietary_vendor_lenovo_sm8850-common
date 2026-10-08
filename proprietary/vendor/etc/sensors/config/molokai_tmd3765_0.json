@@ -100,7 +100,7 @@
       ".fac_cal":{
         "owner": "sns_tmd3765",
         "scale":{ "type": "flt", "ver": "0",
-          "data": "2.6262"
+          "data": "2.6223"
         }
       },
       ".custom_cal":{
@@ -169,16 +169,16 @@
       ".fac_cal":{
         "owner": "sns_tmd3765",
         "near_threshold":{ "type": "flt", "ver": "0",
-          "data": "16085.0"
+          "data": "13469.0"
         },
         "far_threshold":{ "type": "flt", "ver": "0",
-           "data": "5901.0"
+           "data": "4941.0"
         }
       },
       ".prox_hw_cal":{
          "owner": "sns_tmd3765",
          "cal_data":{ "type": "flt", "ver": "0",
-           "data": "494.0"
+           "data": "1129.0"
          }
       },
       ".def_config":{

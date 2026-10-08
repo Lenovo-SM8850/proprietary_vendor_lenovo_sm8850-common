@@ -1,7 +1,8 @@
 {
   "config":{
     "hw_platform": ["MTP", "Surf", "RCM"],
-    "platform_family": ["160"]
+    "platform_family": ["160"],
+    "soc_id": ["660", "661"]
   },
   "mmc56x3x_0_platform":{
     "owner": "sns_mmc56x3x",
