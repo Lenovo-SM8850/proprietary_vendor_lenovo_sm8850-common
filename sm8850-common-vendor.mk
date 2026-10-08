@@ -1395,6 +1395,7 @@ PRODUCT_PACKAGES += \
     libsuidlookup \
     libsv \
     libsv_common \
+    libsvswcpu \
     libswregistrationalgo \
     libsynergy_loc_api \
     libsynx \
@@ -1404,6 +1405,7 @@ PRODUCT_PACKAGES += \
     libtensorflowlite_c_qcom \
     libtestutils \
     libtfestriping \
+    libtflite_fd \
     libthermalclient \
     libthreadutils \
     libtime_genoff \

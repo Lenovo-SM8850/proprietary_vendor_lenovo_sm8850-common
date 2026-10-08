@@ -12782,6 +12782,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsvswcpu",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsvswcpu.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libswregistrationalgo",
     owner: "lenovo",
     strip: {
@@ -13010,6 +13035,30 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtflite_fd",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtflite_fd.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
