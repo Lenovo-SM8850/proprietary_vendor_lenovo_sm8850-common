@@ -1137,6 +1137,8 @@ PRODUCT_PACKAGES += \
     libhdr_backlight_adapter \
     libhdr_stub \
     libhdr_tm \
+    libhdrdynamic \
+    libhdrdynamicootf \
     libhwfenceclient \
     libhwlispcffdump \
     libiccprofile \
