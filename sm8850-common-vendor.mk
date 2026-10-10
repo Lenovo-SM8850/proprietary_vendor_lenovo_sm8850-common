@@ -256,6 +256,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.biometrics.face@4.0-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face@4.0-service.face.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
@@ -327,7 +328,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
-    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service-lenovo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service-lenovo.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
@@ -894,6 +894,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/MaLing1_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/MaLing1_RTP.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/Stars2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Stars2_RTP.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/TribalLangua_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/TribalLangua_RTP.bin \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/arcface_ta.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b02 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw22xxx_cfg_led_off.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_cfg_led_off.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp.bin \
@@ -1023,7 +1024,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-impl \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.servicetrackeraidl-impl \
-    vendor.qti.hardware.soter-impl \
     vulkan.adreno \
     lib-imsqimf \
     lib-imsxml \
@@ -1058,6 +1058,7 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaodoptfeature \
+    libarcsoft_face_mink \
     libarcsoft_qnnhtp \
     libarmemlog \
     libaudio_log_utils \
@@ -1066,6 +1067,7 @@ PRODUCT_PACKAGES += \
     libbacklight-calib \
     libbase64 \
     libbatching \
+    libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -1084,6 +1086,7 @@ PRODUCT_PACKAGES += \
     libchilog \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
+    libclstc_tm \
     libcolor-default \
     libcpion \
     libdataitems \
@@ -1092,6 +1095,7 @@ PRODUCT_PACKAGES += \
     libdigital-dimming \
     libdmap_consent_sdk \
     libdpp_manager \
+    libdpps \
     libdrmtime \
     libdscaalgo \
     libdsd2pcm \
@@ -1112,8 +1116,10 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr10plus \
+    libhdr_als_adapter \
     libhdr_backlight_adapter \
     libhdr_stub \
+    libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
     libhme \
@@ -1293,7 +1299,10 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdm-brightnessaware-parser \
+    libsdm-color \
+    libsdm-colormgr-algo \
     libsdm-disp-vndapis \
+    libsdmextension \
     libseclog \
     libsensinghubapi \
     libsensinghubsession \
@@ -1305,6 +1314,7 @@ PRODUCT_PACKAGES += \
     libsn100u_fw \
     libsn220u_fw \
     libsn300u_fw \
+    libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
@@ -1500,7 +1510,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.secureprocessor.device-V1-ndk \
     vendor.qti.hardware.sensorscalibrate-V1-ndk \
     vendor.qti.hardware.sigma_miracast_aidl-V1-ndk \
-    vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.hardware.spu-V2-ndk \
     vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.vibrator.impl-lenovo \
@@ -1599,6 +1608,7 @@ PRODUCT_PACKAGES += \
     bt_lmp_event-saidl.xml \
     bttpi-saidl.xml \
     c2_manifest_vendor_audio.xml \
+    face-lenovo.xml \
     fm_hci.xml \
     manifest_btaudiocoreservices_qti.xml \
     qasr_vintf.xml \
@@ -1632,7 +1642,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.secureprocessor.xml \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
-    vendor.qti.hardware.soter-service.xml \
     vendor.qti.hardware.trustedui-aidl-service.xml \
     vendor.qti.hardware.vibrator.service-lenovo.xml \
     vendor.qti.hardware.vpp-service.xml \
@@ -1677,7 +1686,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.minkipcbinder@1.0-service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.servicetrackeraidl-service \
-    vendor.qti.hardware.soter-service \
     vendor.qti.hardware.trustedui-aidl-service-qti \
     vendor.qti.hardware.vibrator.service-lenovo \
     vendor.qti.media.c2@1.0-service \
@@ -1732,7 +1740,6 @@ PRODUCT_PACKAGES += \
     tftp_server \
     time_daemon \
     tlpd \
-    vendor.qti.hardware.soter-provision \
     vendor.qti.qspmhal-service \
     vendor.qti.syshealthmon-service \
     vendor_cmd_tool \
