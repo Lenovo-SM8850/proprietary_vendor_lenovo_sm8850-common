@@ -14741,55 +14741,6 @@ install_symlink {
 }
 
 filegroup {
-    name: "lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_b00_blob",
-    srcs: [
-        "proprietary/vendor/firmware/CAMERA_ICP.b00",
-    ],
-}
-
-filegroup {
-    name: "lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_elf_blob",
-    srcs: [
-        "proprietary/vendor/firmware/CAMERA_ICP.elf",
-    ],
-}
-
-filegroup {
-    name: "lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_mdt_blob",
-    srcs: [
-        "proprietary/vendor/firmware/CAMERA_ICP.mdt",
-    ],
-}
-
-filegroup {
-    name: "lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_1_b00_blob",
-    srcs: [
-        "proprietary/vendor/firmware/CAMERA_ICP_1.b00",
-    ],
-}
-
-filegroup {
-    name: "lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_1_elf_blob",
-    srcs: [
-        "proprietary/vendor/firmware/CAMERA_ICP_1.elf",
-    ],
-}
-
-filegroup {
-    name: "lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_1_mdt_blob",
-    srcs: [
-        "proprietary/vendor/firmware/CAMERA_ICP_1.mdt",
-    ],
-}
-
-filegroup {
-    name: "lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_170_elf_blob",
-    srcs: [
-        "proprietary/vendor/firmware/CAMERA_ICP_170.elf",
-    ],
-}
-
-filegroup {
     name: "LenovoShared_abi_v2_ac5b1c8ce06bea06",
     srcs: [
         "proprietary/abi-v2/vendor/bin/fm_qsoc_patches",
