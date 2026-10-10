@@ -1057,7 +1057,6 @@ PRODUCT_PACKAGES += \
     libcert_parse.wpa_s \
     libchilog \
     libclstc_gcp_adapter \
-    libclstc_tm \
     libcodec2_soft_ac4dec \
     libcodec2_soft_ddpdec \
     libcodec2_store_dolby \
@@ -1074,7 +1073,6 @@ PRODUCT_PACKAGES += \
     libdmshal \
     libdolbyclstc \
     libdpp_manager \
-    libdpps \
     libdsd2pcm \
     libdspCV_skel \
     libeepromcutter \
@@ -1086,10 +1084,8 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpudataproducer \
-    libhdr_als_adapter \
     libhdr_backlight_adapter \
     libhdr_skel \
-    libhdr_tm \
     libhwfenceclient \
     libiccprofile \
     libidl \
@@ -1182,10 +1178,7 @@ PRODUCT_PACKAGES += \
     librcmask \
     libscveT2T_skel \
     libsdm-brightnessaware-parser \
-    libsdm-color \
-    libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmextension \
     libseclog \
     libsensinghubapi \
     libsensinghubsession \
@@ -1194,7 +1187,6 @@ PRODUCT_PACKAGES += \
     libsn100u_fw \
     libsn220u_fw \
     libsn300u_fw \
-    libsnapdragoncolor-manager \
     libsns_registry_skel \
     libsoc_helper \
     libsoc_helper_jni \
