@@ -985,6 +985,7 @@ PRODUCT_PACKAGES += \
     dms-service.xml \
     dppdaemon \
     dspservice \
+    dvs-aidl-service \
     dvs-aidl-service.xml \
     edgnss-daemon \
     fm_hci.xml \
@@ -1072,6 +1073,11 @@ PRODUCT_PACKAGES += \
     libdlbvolaidl \
     libdmshal \
     libdolbyclstc \
+    libdolbyeffect \
+    libdolbyproxyandroid \
+    libdolbyproxyandroid-system \
+    libdolbyui \
+    libdolbyui-system \
     libdpp_manager \
     libdsd2pcm \
     libdspCV_skel \
