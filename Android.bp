@@ -7758,6 +7758,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnspextensionfrcservice",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnspextensionfrcservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnspextensiongenericqnnservice",
     owner: "lenovo",
     strip: {
@@ -15128,6 +15153,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libVppFrcQnnHtp",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libapn_dsp_skel",
     owner: "lenovo",
     strip: {
@@ -15297,6 +15342,26 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/rfs/dsp/libnspextensioncopyprovider.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnspextensionfrcprovider",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libnspextensionfrcprovider.so",
             ],
         },
     },
