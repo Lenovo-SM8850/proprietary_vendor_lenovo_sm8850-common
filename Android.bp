@@ -20969,6 +20969,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "dvs-aidl-service.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/dvs-aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "fm_hci.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/fm_hci.xml",
