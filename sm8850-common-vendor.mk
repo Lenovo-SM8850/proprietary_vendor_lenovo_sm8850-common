@@ -1030,14 +1030,12 @@ PRODUCT_PACKAGES += \
     libVkLayer_ADRENO_qprofiler \
     libaacvibrator \
     libapn_dsp_skel \
-    libarcsoft_face_mink \
     libarmemlog \
     libaudio_log_utils \
     libaudioserviceexampleimpl \
     libbacklight-calib \
     libbase64 \
     libbatching \
-    libbiometricsface_ca.arcsoft \
     libbitml_nsp_81na_skel \
     libbitml_nsp_skel \
     libbluetooth_audio_session_qti \
