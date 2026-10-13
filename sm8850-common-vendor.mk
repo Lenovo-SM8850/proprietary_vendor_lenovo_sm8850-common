@@ -5,20 +5,6 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/sm8850-common
 
-PRODUCT_PACKAGES += lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_b00
-
-PRODUCT_PACKAGES += lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_elf
-
-PRODUCT_PACKAGES += lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_mdt
-
-PRODUCT_PACKAGES += lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_1_b00
-
-PRODUCT_PACKAGES += lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_1_elf
-
-PRODUCT_PACKAGES += lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_1_mdt
-
-PRODUCT_PACKAGES += lenovo_sm8850-common_vendor_firmware_CAMERA_ICP_170_elf
-
 PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/odm/etc/aac_richtap_l.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap_l.config \
     vendor/lenovo/sm8850-common/proprietary/odm/etc/aac_richtap_r.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap_r.config \
@@ -259,6 +245,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.biometrics.face@4.0-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face@4.0-service.face.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.powerstats-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.powerstats-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.security.onekeymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.onekeymint-service-qti.rc \
@@ -849,6 +836,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/9_flicker_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_blue.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/9_flicker_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_red.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/9_flicker_whilte.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_whilte.bin \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b03 \
@@ -869,6 +857,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b18 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b19 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.b00 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.b01 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.b02 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.b03 \
@@ -889,6 +880,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.b18 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.b19 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.b20 \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.elf \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_1.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mdt \
+    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/Ding_RTP_23.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Ding_RTP_23.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/Dreams_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Dreams_RTP.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/MaLing1_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/MaLing1_RTP.bin \
@@ -1086,7 +1080,6 @@ PRODUCT_PACKAGES += \
     libchilog \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
-    libclstc_tm \
     libcolor-default \
     libcpion \
     libdataitems \
@@ -1095,7 +1088,6 @@ PRODUCT_PACKAGES += \
     libdigital-dimming \
     libdmap_consent_sdk \
     libdpp_manager \
-    libdpps \
     libdrmtime \
     libdscaalgo \
     libdsd2pcm \
@@ -1116,10 +1108,8 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr10plus \
-    libhdr_als_adapter \
     libhdr_backlight_adapter \
     libhdr_stub \
-    libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
     libhme \
@@ -1299,10 +1289,7 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdm-brightnessaware-parser \
-    libsdm-color \
-    libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmextension \
     libseclog \
     libsensinghubapi \
     libsensinghubsession \
@@ -1314,7 +1301,6 @@ PRODUCT_PACKAGES += \
     libsn100u_fw \
     libsn220u_fw \
     libsn300u_fw \
-    libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
@@ -1608,7 +1594,6 @@ PRODUCT_PACKAGES += \
     bt_lmp_event-saidl.xml \
     bttpi-saidl.xml \
     c2_manifest_vendor_audio.xml \
-    face-lenovo.xml \
     fm_hci.xml \
     manifest_btaudiocoreservices_qti.xml \
     qasr_vintf.xml \
@@ -1758,3 +1743,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+PRODUCT_PACKAGES += face-lenovo.xml
