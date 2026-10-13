@@ -14720,3 +14720,59 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
+
+filegroup {
+    name: "LenovoShared_abi_v2_ac5b1c8ce06bea06",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/fm_qsoc_patches",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_9b76378a1893f7bc",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/ims-dataservice-daemon",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_47794f23ff25f991",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/imsdaemon",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_72c8da9c0df6cb82",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/vendor.dpmd",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_30c675a50b4af7fb",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libwms.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_f2d919195f0041ce",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/vendor.libdpmfdmgr.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_de3ff9eca86e835d",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/vendor.libdpmtcm.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_6a0b3746b2637db7",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/vendor.libmwqemiptablemgr.so",
+    ],
+}
