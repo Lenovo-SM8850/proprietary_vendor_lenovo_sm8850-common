@@ -937,38 +937,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/rfs/rfs_symlinks:$(TARGET_COPY_OUT_VENDOR)/rfs/rfs_symlinks
 
 PRODUCT_PACKAGES += \
-    ConnectionSecurityService \
-    Manifest_IListenSoundModel.xml \
-    TimeService \
-    WfdCommon \
-    WfdService \
-    android.hardware.bluetooth.audio_sw \
-    android.hardware.drm-service.xml \
-    android.hardware.gatekeeper-service-qti.xml \
-    android.hardware.gnss-aidl-impl-qti \
-    android.hardware.gnss-aidl-service-qti \
-    android.hardware.gnss-aidl-service-qti.xml \
-    android.hardware.powerstats-service.qti \
-    android.hardware.powerstats-service.xml \
-    android.hardware.security.keymint-service-spu-qti \
-    android.hardware.security.onekeymint-service-qti.xml \
-    android.hardware.security.secretkeeper-service-qti.xml \
-    android.hardware.security.secureclock-service-qti.xml \
-    android.hardware.security.sharedsecret-service-qti.xml \
-    avf_qcvm_manager.xml \
-    bcs-ranging.xml \
-    bluetooth-finder.xml \
-    bluetooth_hci.xml \
-    bluetooth_sar.xml \
-    bt_lmp_event-saidl.xml \
-    bttpi-saidl.xml \
-    c2_manifest_vendor_audio.xml \
-    camx.device-impl \
-    camx.provider-impl \
-    cnss-daemon \
-    com.google.android.widevine-13130248 \
     com.qti.hvx.addconstant \
     com.qti.hvx.binning \
+    libdepthmapwrapper \
+    camx.device-impl \
+    camx.provider-impl \
     com.qualcomm.qti.cslcustomhw \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -978,42 +951,26 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
-    coresight_reset_source_sink \
-    diag-router \
-    dppdaemon \
-    dspservice \
-    edgnss-daemon \
-    fm_hci.xml \
+    libVkLayer_ADRENO_qprofiler \
     ftm_fm_lib \
-    init.class_main \
-    init.kernel.post_boot-alor \
-    init.kernel.post_boot-canoe \
-    init.qcom.class_core \
-    init.qcom.coex \
-    init.qcom.efs.sync \
-    init.qcom.post_boot \
-    init.qcom.sdio \
-    init.qcom.sensors \
-    init.qti.kernel \
-    init.qti.kernel.debug \
-    init.qti.kernel.debug-alor \
-    init.qti.kernel.debug-canoe \
-    init.qti.kernel.early_debug \
-    init.qti.kernel.early_debug-canoe \
-    init.qti.qcv \
-    init.qti.write \
-    irsc_util \
+    android.hardware.bluetooth.audio_sw \
+    android.hardware.gnss-aidl-impl-qti \
+    mbedtls_qti \
+    vendor.qti.hardware.alarm-impl \
+    vendor.qti.hardware.bluetooth.btavsprovider-impl-qti \
+    vendor.qti.hardware.bluetooth.xpanprovider-impl-qti \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vendor.qti.hardware.capabilityconfigstore-impl \
+    vendor.qti.hardware.servicetrackeraidl-impl \
     libAVFVirtClientInterface \
     libAlacSwDec \
     libApeSwDec \
     libCsecClient \
-    libDLDPP_skel \
     libDcfClientSensor \
     libEvrcSwCodec \
     libFileMux_proprietary \
     libFlacSwDec \
-    libHexlpQnnHtp \
-    libHexlpQnnSystem \
     libLenovoNvram \
     libOmxCore \
     libOpenCL \
@@ -1027,17 +984,13 @@ PRODUCT_PACKAGES += \
     libTrustedInputAIDL \
     libTrustedInputUtils \
     libVirtClientInterface \
-    libVkLayer_ADRENO_qprofiler \
     libaacvibrator \
-    libapn_dsp_skel \
     libarmemlog \
     libaudio_log_utils \
     libaudioserviceexampleimpl \
     libbacklight-calib \
     libbase64 \
     libbatching \
-    libbitml_nsp_81na_skel \
-    libbitml_nsp_skel \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
@@ -1055,22 +1008,17 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdataitems \
     libdepthcomputation \
-    libdepthmapwrapper \
     libdigital-dimming \
     libdpp_manager \
     libdsd2pcm \
-    libdspCV_skel \
     libeepromcutter \
     libfastcrc \
-    libfastcvadsp \
-    libfastcvdsp_skel \
     libgeofencing \
     libgnss \
     libgnsspps \
     libgps.utils \
     libgpudataproducer \
     libhdr_backlight_adapter \
-    libhdr_skel \
     libhwfenceclient \
     libiccprofile \
     libidl \
@@ -1098,18 +1046,12 @@ PRODUCT_PACKAGES += \
     libmiracast \
     libmm-hdcpmgr \
     libmm-omxcore \
-    libmmosal \
     libmmosal_vendor \
-    libmmparser_lite \
-    libmmparserextractor \
-    libmmrtpdecoder \
     libmmrtpdecoder_vendor \
-    libmmrtpencoder \
     libmmrtpencoder_vendor \
     libmodem_device_ids \
     libmpbase \
     libnspextensioncopyservice \
-    libnspextensiongenericqnnprovider \
     libnspextensiongenericqnnservice \
     libnspextensionsuperresolutionservice \
     liboem_specific \
@@ -1129,7 +1071,6 @@ PRODUCT_PACKAGES += \
     libperfioctl \
     libperipheral_client \
     libplatformconfig \
-    libpseudocryptoplugin \
     libptq_uint8 \
     libq-perflog \
     libqcbor \
@@ -1149,7 +1090,6 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqrtrclient \
     libqseed3 \
-    libqsegnetengine_dsp_skel \
     libqsh_ble_pb \
     libqshcamera_sensinghubapi \
     libqsocket \
@@ -1160,7 +1100,6 @@ PRODUCT_PACKAGES += \
     libqtivibratoreffect-lenovo \
     libqtivibratoreffectoffload-lenovo \
     librcmask \
-    libscveT2T_skel \
     libsdm-brightnessaware-parser \
     libsdm-disp-vndapis \
     libseclog \
@@ -1180,11 +1119,7 @@ PRODUCT_PACKAGES += \
     libstreamparser \
     libstreamprocessor \
     libsubsystem_control \
-    libsvDescMatchImpl_dsp_skel \
-    libsvDescMatch_dsp \
     libsv_common \
-    libsvswdsp \
-    libsvswdsp_skel \
     libswregistrationalgo \
     libsynergy_loc_api \
     libsynx \
@@ -1200,79 +1135,48 @@ PRODUCT_PACKAGES += \
     libvideoutils \
     libvmfilexfer \
     libvppcommon \
-    libwfdavenhancements \
-    libwfdclient \
     libwfdcodecv4l2_proprietary \
-    libwfdcommonutils \
     libwfdcommonutils_proprietary \
-    libwfdconfigutils \
     libwfdconfigutils_proprietary \
-    libwfddisplayconfig \
     libwfddisplayconfig_vendor \
     libwfdhdcpcp \
     libwfdhdcpservice_proprietary \
-    libwfdmminterface \
     libwfdmminterface_proprietary \
     libwfdmmservice_proprietary \
-    libwfdmmsink \
     libwfdmmsrc_proprietary \
-    libwfdmmsrc_system \
     libwfdmodulehdcpsession \
-    libwfdnative \
-    libwfdrtsp \
     libwfdrtsp_vendor \
-    libwfdservice \
     libwfdsessionmodule \
-    libwfdsinksm \
     libwfdsourcesession_proprietary \
     libwfdsourcesm_proprietary \
-    libwfduibcinterface \
     libwfduibcinterface_vendor \
-    libwfduibcsink \
     libwfduibcsink_vendor \
-    libwfduibcsinkinterface \
     libwfduibcsinkinterface_vendor \
-    libwfduibcsrc \
     libwfduibcsrc_vendor \
-    libwfduibcsrcinterface \
     libwfduibcsrcinterface_vendor \
     libwfdutils_proprietary \
     libwifiobserver \
     libxpan_wifi_hal \
     libxtadapter \
-    loc_launcher \
-    manifest_btaudiocoreservices_qti.xml \
-    mbedtls_qti \
-    pd-mapper \
-    pm-proxy \
-    pm-service \
-    power_off_alarm \
-    ppd \
-    qasr_vintf.xml \
-    qca6234-service \
-    qconfigservice \
-    qdcmss \
-    qesdk-manager.xml \
-    qguard \
-    qlm-service \
-    qrtr-cfg \
-    qrtr-lookup \
-    qrtr-ns \
-    qsap_mpamsvc \
-    qspa-modem.xml \
-    qspa-nav.xml \
+    libpseudocryptoplugin \
     qti.video.utils.videobufferlayout \
-    rmt_storage \
-    snapdragon_services \
-    snapdragon_services.xml \
-    sscrpcd \
-    ssgqmigd \
-    ssgqmigd64 \
-    ssr_setup \
-    subsystem_ramdump \
-    system_dlkm_modprobe \
-    tftp_server \
-    time_daemon \
+    libDLDPP_skel \
+    libHexlpQnnHtp \
+    libHexlpQnnSystem \
+    libapn_dsp_skel \
+    libbitml_nsp_81na_skel \
+    libbitml_nsp_skel \
+    libdspCV_skel \
+    libfastcvadsp \
+    libfastcvdsp_skel \
+    libhdr_skel \
+    libnspextensiongenericqnnprovider \
+    libqsegnetengine_dsp_skel \
+    libscveT2T_skel \
+    libsvDescMatchImpl_dsp_skel \
+    libsvDescMatch_dsp \
+    libsvswdsp \
+    libsvswdsp_skel \
     vendor.aac.hardware.richtap.vibrator-V1-ndk \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
@@ -1282,60 +1186,31 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
     vendor.lenovo.hardware.battery-V5-ndk \
-    vendor.lenovo.hardware.battery-service \
-    vendor.lenovo.hardware.battery-service.xml \
     vendor.lenovo.hardware.display-V1-ndk \
-    vendor.lenovo.hardware.display-service \
-    vendor.lenovo.hardware.display-service.xml \
     vendor.lenovo.hardware.touchscreen-V5-ndk \
-    vendor.lenovo.hardware.touchscreen-service.xml \
     vendor.lenovo.hardware.ufs-V1-ndk \
-    vendor.lenovo.hardware.ufs-service \
-    vendor.lenovo.hardware.ufs-service.xml \
     vendor.lenovo.hardware.vibrator_dual-V1-ndk \
-    vendor.lenovo.hardware.vibrator_dual-service \
-    vendor.lenovo.hardware.vibrator_dual-service.xml \
     vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.MemHal-V1-ndk \
-    vendor.qti.MemHal.xml \
-    vendor.qti.camera.aon-impl.xml \
-    vendor.qti.camera.offlinecamera-impl.xml \
-    vendor.qti.camera.provider-service_64 \
-    vendor.qti.camera.provider.xml \
     vendor.qti.data.factoryservice-V2-ndk \
     vendor.qti.data.mwqemaidlservice-V1-ndk \
     vendor.qti.data.slm@1.0 \
-    vendor.qti.diag.hal.service.xml \
     vendor.qti.diaghal-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V8-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.gnss-service.xml \
     vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
     vendor.qti.hardware.ListenSoundModelAidl-V2-ndk \
     vendor.qti.hardware.alarm-V1-ndk \
-    vendor.qti.hardware.alarm-impl \
-    vendor.qti.hardware.alarm-service \
-    vendor.qti.hardware.alarm.xml \
     vendor.qti.hardware.automotive.vehicle@1.0 \
     vendor.qti.hardware.bluetooth.btavsprovider-V1-ndk \
-    vendor.qti.hardware.bluetooth.btavsprovider-impl-qti \
-    vendor.qti.hardware.bluetooth.btavsprovider.xml \
     vendor.qti.hardware.bluetooth.xpanprovider-V1-ndk \
-    vendor.qti.hardware.bluetooth.xpanprovider-impl-qti \
-    vendor.qti.hardware.bluetooth.xpanprovider.xml \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.bluetooth_sar-V1-ndk \
     vendor.qti.hardware.bttpi-V3-ndk \
     vendor.qti.hardware.c2pa-V1-ndk \
-    vendor.qti.hardware.c2pa-aidl-service.xml \
     vendor.qti.hardware.cacertaidlservice-V1-ndk \
     vendor.qti.hardware.capabilityconfigstore-V1-ndk \
-    vendor.qti.hardware.capabilityconfigstore-impl \
-    vendor.qti.hardware.capabilityconfigstore-service \
-    vendor.qti.hardware.capabilityconfigstore-service.xml \
     vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.server-V2-ndk \
@@ -1354,29 +1229,21 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
-    vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.dsp-V1-ndk \
-    vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.embmssl.xml \
     vendor.qti.hardware.embmsslaidl-V2-ndk \
     vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.hexlp-V1-ndk \
     vendor.qti.hardware.hexlp-V2-ndk \
-    vendor.qti.hardware.hexlp-service.xml \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.minkipcbinder-V1-ndk \
-    vendor.qti.hardware.minkipcbinder-service.xml \
     vendor.qti.hardware.perf2-V1-ndk \
-    vendor.qti.hardware.perf2.xml \
     vendor.qti.hardware.power.powermodule-V1-ndk \
-    vendor.qti.hardware.power.powermodule.xml \
     vendor.qti.hardware.qasr-V3-ndk \
     vendor.qti.hardware.qconfig-V1-ndk \
-    vendor.qti.hardware.qconfig-service.xml \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
@@ -1415,31 +1282,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.secureprocessor.common-helper \
     vendor.qti.hardware.secureprocessor.config-V1-ndk \
     vendor.qti.hardware.secureprocessor.device-V1-ndk \
-    vendor.qti.hardware.secureprocessor.xml \
     vendor.qti.hardware.sensorscalibrate-V1-ndk \
-    vendor.qti.hardware.sensorscalibrate.xml \
-    vendor.qti.hardware.servicetrackeraidl-impl \
-    vendor.qti.hardware.servicetrackeraidl-service \
-    vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.sigma_miracast_aidl-V1-ndk \
     vendor.qti.hardware.spu-V2-ndk \
     vendor.qti.hardware.trustedui-V1-ndk \
-    vendor.qti.hardware.trustedui-aidl-service.xml \
     vendor.qti.hardware.vibrator.impl-lenovo \
-    vendor.qti.hardware.vibrator.service-lenovo \
-    vendor.qti.hardware.vibrator.service-lenovo.xml \
     vendor.qti.hardware.vibratorCL.impl-lenovo \
     vendor.qti.hardware.vibratorOL.impl-lenovo \
     vendor.qti.hardware.vibratorSel.impl-lenovo \
     vendor.qti.hardware.vpp-V1-ndk \
-    vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.hardware.wifidisplaysession-service.xml \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk-system \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.hardware.wigig.netperftuner@1.0 \
     vendor.qti.ims.callcapability@1.0 \
@@ -1458,8 +1313,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
     vendor.qti.latencyaidlservice-V1-ndk \
-    vendor.qti.media.c2@1.0-service \
-    vendor.qti.media.c2audio@1.0-service \
     vendor.qti.memory.pasrmanager-V1-ndk \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qesdhal-impl \
@@ -1472,28 +1325,175 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdsys-V4-ndk \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal-impl \
-    vendor.qti.qspmhal-service \
-    vendor.qti.qspmhal-service.xml \
     vendor.qti.qvirt-V2-ndk \
     vendor.qti.snapdragonServices-V2-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
-    vendor.qti.syshealthmon-service \
-    vendor.qti.syshealthmon-service.xml \
-    vendor_cmd_tool \
-    vendor_lib_rfsa_adsp_libQnnHtpV81Skel_so \
     vendor_lib_rfsa_adsp_libQnnHtpV81_so \
+    vendor_lib_rfsa_adsp_libQnnHtpV81Skel_so \
     vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
     vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so \
     vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
     vendor_lib_rfsa_adsp_libhme_dsp_skel_so \
     vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    libmmparserextractor \
+    libmmosal \
+    libmmparser_lite \
+    libmmrtpdecoder \
+    libmmrtpencoder \
+    libwfdavenhancements \
+    libwfdclient \
+    libwfdcommonutils \
+    libwfdconfigutils \
+    libwfddisplayconfig \
+    libwfdmminterface \
+    libwfdmmsink \
+    libwfdmmsrc_system \
+    libwfdnative \
+    libwfdrtsp \
+    libwfdservice \
+    libwfdsinksm \
+    libwfduibcinterface \
+    libwfduibcsink \
+    libwfduibcsinkinterface \
+    libwfduibcsrc \
+    libwfduibcsrcinterface \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk-system \
+    com.google.android.widevine-13130248 \
+    ConnectionSecurityService \
+    TimeService \
+    WfdService \
+    WfdCommon \
+    Manifest_IListenSoundModel.xml \
+    android.hardware.drm-service.xml \
+    android.hardware.gatekeeper-service-qti.xml \
+    android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.powerstats-service.xml \
+    android.hardware.security.onekeymint-service-qti.xml \
+    android.hardware.security.secretkeeper-service-qti.xml \
+    android.hardware.security.secureclock-service-qti.xml \
+    android.hardware.security.sharedsecret-service-qti.xml \
+    avf_qcvm_manager.xml \
+    bcs-ranging.xml \
+    bluetooth-finder.xml \
+    bluetooth_hci.xml \
+    bluetooth_sar.xml \
+    bt_lmp_event-saidl.xml \
+    bttpi-saidl.xml \
+    c2_manifest_vendor_audio.xml \
+    fm_hci.xml \
+    manifest_btaudiocoreservices_qti.xml \
+    qasr_vintf.xml \
+    qesdk-manager.xml \
+    qspa-modem.xml \
+    qspa-nav.xml \
+    snapdragon_services.xml \
+    vendor.lenovo.hardware.battery-service.xml \
+    vendor.lenovo.hardware.display-service.xml \
+    vendor.lenovo.hardware.touchscreen-service.xml \
+    vendor.lenovo.hardware.ufs-service.xml \
+    vendor.lenovo.hardware.vibrator_dual-service.xml \
+    vendor.qti.MemHal.xml \
+    vendor.qti.camera.aon-impl.xml \
+    vendor.qti.camera.offlinecamera-impl.xml \
+    vendor.qti.camera.provider.xml \
+    vendor.qti.diag.hal.service.xml \
+    vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.alarm.xml \
+    vendor.qti.hardware.bluetooth.btavsprovider.xml \
+    vendor.qti.hardware.bluetooth.xpanprovider.xml \
+    vendor.qti.hardware.c2pa-aidl-service.xml \
+    vendor.qti.hardware.capabilityconfigstore-service.xml \
+    vendor.qti.hardware.dsp-service.xml \
+    vendor.qti.hardware.embmssl.xml \
+    vendor.qti.hardware.hexlp-service.xml \
+    vendor.qti.hardware.minkipcbinder-service.xml \
+    vendor.qti.hardware.perf2.xml \
+    vendor.qti.hardware.power.powermodule.xml \
+    vendor.qti.hardware.qconfig-service.xml \
+    vendor.qti.hardware.secureprocessor.xml \
+    vendor.qti.hardware.sensorscalibrate.xml \
+    vendor.qti.hardware.servicetrackeraidl-service.xml \
+    vendor.qti.hardware.trustedui-aidl-service.xml \
+    vendor.qti.hardware.vibrator.service-lenovo.xml \
+    vendor.qti.hardware.vpp-service.xml \
+    vendor.qti.hardware.wifidisplaysession-service.xml \
+    vendor.qti.qspmhal-service.xml \
+    vendor.qti.syshealthmon-service.xml \
+    cnss-daemon \
+    coresight_reset_source_sink \
+    diag-router \
+    dppdaemon \
+    dspservice \
+    edgnss-daemon \
+    android.hardware.gnss-aidl-service-qti \
+    android.hardware.powerstats-service.qti \
+    android.hardware.security.keymint-service-spu-qti \
+    qconfigservice \
+    vendor.lenovo.hardware.battery-service \
+    vendor.lenovo.hardware.display-service \
+    vendor.lenovo.hardware.ufs-service \
+    vendor.lenovo.hardware.vibrator_dual-service \
+    vendor.qti.camera.provider-service_64 \
+    vendor.qti.hardware.alarm-service \
+    vendor.qti.hardware.capabilityconfigstore-service \
+    vendor.qti.hardware.display.color-service \
+    vendor.qti.hardware.servicetrackeraidl-service \
+    vendor.qti.hardware.vibrator.service-lenovo \
+    vendor.qti.media.c2@1.0-service \
+    vendor.qti.media.c2audio@1.0-service \
+    init.class_main \
+    init.kernel.post_boot-alor \
+    init.kernel.post_boot-canoe \
+    init.qcom.class_core \
+    init.qcom.coex \
+    init.qcom.efs.sync \
+    init.qcom.post_boot \
+    init.qcom.sdio \
+    init.qcom.sensors \
+    init.qti.kernel.debug-alor \
+    init.qti.kernel.debug-canoe \
+    init.qti.kernel.debug \
+    init.qti.kernel.early_debug-canoe \
+    init.qti.kernel.early_debug \
+    init.qti.kernel \
+    init.qti.qcv \
+    init.qti.write \
+    irsc_util \
+    loc_launcher \
+    pd-mapper \
+    pm-proxy \
+    pm-service \
+    power_off_alarm \
+    ppd \
+    qca6234-service \
+    qdcmss \
+    qguard \
+    qlm-service \
+    qrtr-cfg \
+    qrtr-lookup \
+    qrtr-ns \
+    qsap_mpamsvc \
+    rmt_storage \
+    snapdragon_services \
+    sscrpcd \
+    ssgqmigd \
+    ssgqmigd64 \
+    ssr_setup \
+    subsystem_ramdump \
+    system_dlkm_modprobe \
+    tftp_server \
+    time_daemon \
+    vendor.qti.qspmhal-service \
+    vendor.qti.syshealthmon-service \
+    vendor_cmd_tool \
     vendor_modprobe \
     wfdhdcphalservice \
-    wfdservice64 \
     wfdvndservice \
     wifidisplayhalservice \
-    xtwifi-client
+    xtwifi-client \
+    wfdservice64
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so

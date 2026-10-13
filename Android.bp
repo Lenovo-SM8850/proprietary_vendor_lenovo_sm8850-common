@@ -12954,14 +12954,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.kernel.debug",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/init.qti.kernel.debug.sh",
-    filename: "init.qti.kernel.debug.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qti.kernel.debug-alor",
     owner: "lenovo",
     src: "proprietary/vendor/bin/init.qti.kernel.debug-alor.sh",
@@ -12978,10 +12970,10 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.kernel.early_debug",
+    name: "init.qti.kernel.debug",
     owner: "lenovo",
-    src: "proprietary/vendor/bin/init.qti.kernel.early_debug.sh",
-    filename: "init.qti.kernel.early_debug.sh",
+    src: "proprietary/vendor/bin/init.qti.kernel.debug.sh",
+    filename: "init.qti.kernel.debug.sh",
     soc_specific: true,
 }
 
@@ -12990,6 +12982,14 @@ sh_binary {
     owner: "lenovo",
     src: "proprietary/vendor/bin/init.qti.kernel.early_debug-canoe.sh",
     filename: "init.qti.kernel.early_debug-canoe.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.kernel.early_debug",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qti.kernel.early_debug.sh",
+    filename: "init.qti.kernel.early_debug.sh",
     soc_specific: true,
 }
 
@@ -14774,5 +14774,1405 @@ filegroup {
     name: "LenovoShared_abi_v2_6a0b3746b2637db7",
     srcs: [
         "proprietary/abi-v2/vendor/lib64/vendor.libmwqemiptablemgr.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_a3ff3fc6a5556900",
+    srcs: [
+        "proprietary/abi-v1/vendor/bin/hw/vendor.qti.hardware.secureprocessor",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_c4bbf0e5bc650995",
+    srcs: [
+        "proprietary/abi-v1/vendor/bin/nicmd",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_c22562078524435b",
+    srcs: [
+        "proprietary/abi-v1/vendor/bin/qseecomd",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_e1a3aba094b70ff1",
+    srcs: [
+        "proprietary/abi-v1/vendor/bin/trusteduilistener",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_58ffbeb039903b3c",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.afbfusion.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_936e40b0ffe40eba",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.customhwnode.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_aac78be4140225d9",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.dummydepth.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_8c36f930f47cc0a2",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.dummysat.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_35de22e71ccc0b6c",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.evs.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_c9454e36f6a953b9",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.fcv.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_70fc94e06c4450fd",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.formatconversion.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_56f57b246aab91c3",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.hdr10phist.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_bdf5d91c6abea33b",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.lenovo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_ea0d89172486094e",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.mlinference.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_a30a93c4e42ca1d4",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.remosaic.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_5d2ad250ba52abf6",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.spdepth.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_4ccc787b7310e842",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.stich.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_794a26ee3230c322",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.superportraitvideo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_2f5cda074c5fa1c5",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.swec.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_f7e3ea77e9197e63",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.swmlremosaic.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3a221c87c140f230",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.swpreprocess.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3ed1b9a5e3ec49fd",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.swregistration.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_917a5fc3ac7b44b2",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.node.swvrt.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_6f3dcb1f61c32ca4",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_736b8c6bb85dc058",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.afwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_f7f80d86204ff08f",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_da414e5b3dafceb9",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.exampleaf.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_cd0f738020252513",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.haf.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_7f6a2c9d93f74760",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.hafoverride.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3b71f3991c81411b",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.localhistogram.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_702c569b7416160e",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_0c0ff86f4e0c6f85",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_8b2a732ae4cfed54",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.roimixer.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_589d1f4242c00874",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qti.stats.statsgenerator.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_d05548092f783514",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qtistatic.stats.aec.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_d3f0bf5b50139834",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qtistatic.stats.af.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_98e0b2c32a5c7bba",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qtistatic.stats.awb.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_81b29f6ca6796630",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_25ccfd7f3c8e4a7a",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/camera/components/libdepthmapwrapper_itof.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_4a4a07d6a9a2ca5e",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/com.qti.platformsettings.sm8850.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3295950faf3ad216",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/com.qti.qseeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_f31edff9034c25c4",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/com.qti.stats.common.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_edc3b1f3fafd6839",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_ab40c2af35d0be9a",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/hw/libspuqtigatekeeper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_e3b0145da69f2e98",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_056450dd59a9b59d",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/lib-imsdpl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_7f3fc651c40bc248",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/lib-imsservice.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_0eb4e6539bfb7401",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libTUITAVMInterface.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3f4d331bdfbefc73",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libTrustedUIAIDL.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_bd3e048979d91181",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libagmmixer.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_b07c8e8e09e37904",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamerabuffer.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_c7fe9d87cabc7013",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxasyncdumpmanager.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3a9d24735d91248d",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxdumpinforecorder.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_32350f0cc6d321db",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxhwnodecontext.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_69c6f94c54399cf7",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxhwquery.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_b65608611da33dda",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxods.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_7761ee77e931f5e4",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxsocketclientutil.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_67fcc7bef155a828",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxsocketserverutil.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_d076908eb13c7f94",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxswprocessalgo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_326a1e3e8f0557a8",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcamxtintlessalgo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_b4b61e8308a39374",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libchinodehmeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_e1826859f07bd155",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libcom.qti.chinodeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_200d5769cc663e9f",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libconfigdb.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_5a1dc16afb583519",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libdpps.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_89753e598c38876e",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libdsi_netctrl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_9d9900e5c640b27d",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libfastcvdsp_stub.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_fcf74350b14f1c99",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libfeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_ac311d76d86c3c23",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libhwlispcffdump.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3756ca186e09f0e6",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libisphwsetting.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_d25b3b6eabf8aa9c",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libkeymasterdeviceutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_4feda423da740cbc",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libllvm-qcom.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_3b698481463c188c",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libloadtrusteduiapp.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_7474e9fd2df0caa5",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/liblocdiagiface.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_27d180bd3c9234f0",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libmmcamera_cac.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_b2b355eef7814695",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libnicm_dsi.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_1bf3859de8d95e81",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libnicm_vh.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_35fd52126c022836",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqc2audio_hwaudiocodec.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_34c0235252fb5493",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqcc_sdk.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_f9bec6c397bdae52",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqcodec2_mockfilter.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_9f85a6a9edcfe53f",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqcodec2_streaminteg_filter.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_1e9e9496edb9ae58",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqcrilNrLogger.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_855b0e8eb9b21fb8",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqcrildataaidl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_9ab1377221532db1",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqdi.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_6e8685d164d75735",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqdpr.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_31112228f30ef4c9",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqesdk_qshsession.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_dd415b7836ce3816",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqmi_client_helper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_9e60cccae3cfbc4a",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqmi_client_qmux.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_7c4e0724a1b6bc5c",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqshutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_be6650aa17c733ab",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libqtigefar.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_a0fbecef10625bba",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/librpmb.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_636fe7eb286f9814",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libsensorcal.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_28bd8da3c85061a5",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libsnapdragoncolor-manager.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_029991fde6854487",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libsnsdiaglog.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_69deaf842c67da85",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libspukeymintdeviceutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_ab9163c71fe7d217",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libsuidlookup.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_97325a6a18471c5d",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libtrustedapploader.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_86809a648ebe7e38",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libvideoml.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_1fbe83634015cc6b",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/libvpphvx.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v1_9b44ae742432f526",
+    srcs: [
+        "proprietary/abi-v1/vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_1bbe7346ebecf46d",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/cnd",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_a3ff3fc6a5556900",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/hw/vendor.qti.hardware.secureprocessor",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_7c7e6c897086fdfa",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/ims_rtp_daemon",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_c4bbf0e5bc650995",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/nicmd",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_c22562078524435b",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/qseecomd",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_e1a3aba094b70ff1",
+    srcs: [
+        "proprietary/abi-v2/vendor/bin/trusteduilistener",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_58ffbeb039903b3c",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.afbfusion.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_936e40b0ffe40eba",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.customhwnode.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_aac78be4140225d9",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.dummydepth.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_8c36f930f47cc0a2",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.dummysat.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_35de22e71ccc0b6c",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.evs.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_c9454e36f6a953b9",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.fcv.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_70fc94e06c4450fd",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.formatconversion.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_56f57b246aab91c3",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.hdr10phist.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_bdf5d91c6abea33b",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.lenovo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_ea0d89172486094e",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.mlinference.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_a30a93c4e42ca1d4",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.remosaic.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_5d2ad250ba52abf6",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.spdepth.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_4ccc787b7310e842",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.stich.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_794a26ee3230c322",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.superportraitvideo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_2f5cda074c5fa1c5",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.swec.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_f7e3ea77e9197e63",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.swmlremosaic.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3a221c87c140f230",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.swpreprocess.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3ed1b9a5e3ec49fd",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.swregistration.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_917a5fc3ac7b44b2",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.node.swvrt.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_6f3dcb1f61c32ca4",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_736b8c6bb85dc058",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.afwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_f7f80d86204ff08f",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_da414e5b3dafceb9",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.exampleaf.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_cd0f738020252513",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.haf.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_7f6a2c9d93f74760",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.hafoverride.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3b71f3991c81411b",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.localhistogram.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_702c569b7416160e",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_0c0ff86f4e0c6f85",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_8b2a732ae4cfed54",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.roimixer.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_589d1f4242c00874",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qti.stats.statsgenerator.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_d05548092f783514",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qtistatic.stats.aec.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_d3f0bf5b50139834",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qtistatic.stats.af.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_98e0b2c32a5c7bba",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qtistatic.stats.awb.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_81b29f6ca6796630",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_25ccfd7f3c8e4a7a",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/camera/components/libdepthmapwrapper_itof.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_4a4a07d6a9a2ca5e",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/com.qti.platformsettings.sm8850.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3295950faf3ad216",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/com.qti.qseeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_f31edff9034c25c4",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/com.qti.stats.common.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_edc3b1f3fafd6839",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_ab40c2af35d0be9a",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/hw/libspuqtigatekeeper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_e3b0145da69f2e98",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_056450dd59a9b59d",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/lib-imsdpl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_7f3fc651c40bc248",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/lib-imsservice.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_0eb4e6539bfb7401",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libTUITAVMInterface.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3f4d331bdfbefc73",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libTrustedUIAIDL.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_bd3e048979d91181",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libagmmixer.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_b07c8e8e09e37904",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamerabuffer.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_c7fe9d87cabc7013",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxasyncdumpmanager.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3a9d24735d91248d",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxdumpinforecorder.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_32350f0cc6d321db",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxhwnodecontext.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_69c6f94c54399cf7",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxhwquery.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_b65608611da33dda",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxods.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_7761ee77e931f5e4",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxsocketclientutil.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_67fcc7bef155a828",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxsocketserverutil.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_d076908eb13c7f94",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxswprocessalgo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_326a1e3e8f0557a8",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcamxtintlessalgo.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_b4b61e8308a39374",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libchinodehmeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_e1826859f07bd155",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libcom.qti.chinodeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_200d5769cc663e9f",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libconfigdb.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_5a1dc16afb583519",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libdpps.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_89753e598c38876e",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libdsi_netctrl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_9d9900e5c640b27d",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libfastcvdsp_stub.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_fcf74350b14f1c99",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libfeutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_ac311d76d86c3c23",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libhwlispcffdump.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3756ca186e09f0e6",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libisphwsetting.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_d25b3b6eabf8aa9c",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libkeymasterdeviceutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_4feda423da740cbc",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libllvm-qcom.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_3b698481463c188c",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libloadtrusteduiapp.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_7474e9fd2df0caa5",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/liblocdiagiface.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_27d180bd3c9234f0",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libmmcamera_cac.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_b2b355eef7814695",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libnicm_dsi.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_1bf3859de8d95e81",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libnicm_vh.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_35fd52126c022836",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqc2audio_hwaudiocodec.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_34c0235252fb5493",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqcc_sdk.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_f9bec6c397bdae52",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqcodec2_mockfilter.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_9f85a6a9edcfe53f",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqcodec2_streaminteg_filter.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_1e9e9496edb9ae58",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqcrilNrLogger.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_855b0e8eb9b21fb8",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqcrildataaidl.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_9ab1377221532db1",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqdi.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_6e8685d164d75735",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqdpr.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_31112228f30ef4c9",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqesdk_qshsession.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_dd415b7836ce3816",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqmi_client_helper.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_9e60cccae3cfbc4a",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqmi_client_qmux.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_7c4e0724a1b6bc5c",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqshutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_be6650aa17c733ab",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libqtigefar.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_a0fbecef10625bba",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/librpmb.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_636fe7eb286f9814",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libsensorcal.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_28bd8da3c85061a5",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libsnapdragoncolor-manager.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_029991fde6854487",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libsnsdiaglog.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_69deaf842c67da85",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libspukeymintdeviceutils.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_ab9163c71fe7d217",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libsuidlookup.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_97325a6a18471c5d",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libtrustedapploader.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_86809a648ebe7e38",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libvideoml.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_1fbe83634015cc6b",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/libvpphvx.so",
+    ],
+}
+
+filegroup {
+    name: "LenovoShared_abi_v2_9b44ae742432f526",
+    srcs: [
+        "proprietary/abi-v2/vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so",
     ],
 }
