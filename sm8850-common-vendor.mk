@@ -242,7 +242,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
-    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.biometrics.face@4.0-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face@4.0-service.face.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
@@ -888,7 +887,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/MaLing1_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/MaLing1_RTP.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/Stars2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Stars2_RTP.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/TribalLangua_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/TribalLangua_RTP.bin \
-    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/arcface_ta.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b02 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw22xxx_cfg_led_off.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_cfg_led_off.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp.bin \
@@ -1842,8 +1840,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-PRODUCT_PACKAGES += face-lenovo.xml
 
 ifeq ($(LENOVO_HAS_MODEM),true)
 

@@ -24365,14 +24365,6 @@ install_symlink {
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
-prebuilt_etc {
-    name: "face-lenovo.xml",
-    src: "proprietary/vendor/etc/vintf/manifest/face-default.xml",
-    filename: "face-default.xml",
-    relative_install_path: "vintf/manifest",
-    vendor: true,
-}
-
 cc_prebuilt_library_shared {
     name: "vendor.qti.diaghal-V1-ndk-system",
     stem: "vendor.qti.diaghal-V1-ndk",
