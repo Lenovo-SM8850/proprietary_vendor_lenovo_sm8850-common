@@ -20515,10 +20515,106 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
+    name: "init.class_main",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.class_main.sh",
+    filename: "init.class_main.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.kernel.post_boot-alor",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.kernel.post_boot-alor.sh",
+    filename: "init.kernel.post_boot-alor.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.kernel.post_boot-canoe",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.kernel.post_boot-canoe.sh",
+    filename: "init.kernel.post_boot-canoe.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.class_core",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.class_core.sh",
+    filename: "init.qcom.class_core.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.coex",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.coex.sh",
+    filename: "init.qcom.coex.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.efs.sync",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.efs.sync.sh",
+    filename: "init.qcom.efs.sync.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.sdio",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.sdio.sh",
+    filename: "init.qcom.sdio.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.sensors",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qcom.sensors.sh",
+    filename: "init.qcom.sensors.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.kernel.debug-alor",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qti.kernel.debug-alor.sh",
+    filename: "init.qti.kernel.debug-alor.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.kernel.early_debug-canoe",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qti.kernel.early_debug-canoe.sh",
+    filename: "init.qti.kernel.early_debug-canoe.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.kernel",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qti.kernel.sh",
+    filename: "init.qti.kernel.sh",
+    soc_specific: true,
+}
+
+sh_binary {
     name: "init.qti.keymaster",
     owner: "lenovo",
     src: "proprietary/vendor/bin/init.qti.keymaster.sh",
     filename: "init.qti.keymaster.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.write",
+    owner: "lenovo",
+    src: "proprietary/vendor/bin/init.qti.write.sh",
+    filename: "init.qti.write.sh",
     soc_specific: true,
 }
 

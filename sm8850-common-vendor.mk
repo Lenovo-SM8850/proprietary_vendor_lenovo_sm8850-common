@@ -1709,7 +1709,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.trustedui-aidl-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
+    init.class_main \
+    init.kernel.post_boot-alor \
+    init.kernel.post_boot-canoe \
+    init.qcom.class_core \
+    init.qcom.coex \
+    init.qcom.efs.sync \
+    init.qcom.sdio \
+    init.qcom.sensors \
+    init.qti.kernel.debug-alor \
+    init.qti.kernel.early_debug-canoe \
+    init.qti.kernel \
     init.qti.keymaster \
+    init.qti.write \
     ipacm-diag \
     ipp_key_gen \
     irsc_util \
