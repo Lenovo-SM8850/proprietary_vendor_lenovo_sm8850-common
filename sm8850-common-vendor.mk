@@ -239,7 +239,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
-    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.biometrics.face@4.0-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face@4.0-service.face.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
@@ -855,7 +854,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/MaLing1_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/MaLing1_RTP.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/Stars2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Stars2_RTP.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/TribalLangua_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/TribalLangua_RTP.bin \
-    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/arcface_ta.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b02 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw22xxx_cfg_led_off.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_cfg_led_off.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
@@ -1061,9 +1059,6 @@ PRODUCT_PACKAGES += \
     libaidenoiserv2 \
     libaodoptfeature \
     libar-pal \
-    libarcsoft_face_biometric \
-    libarcsoft_face_mink \
-    libarcsoft_faceid \
     libarcsoft_qnnhtp \
     libarcsoft_video_superportrait \
     libarmemlog \
@@ -1074,7 +1069,6 @@ PRODUCT_PACKAGES += \
     libbacklight-calib \
     libbase64 \
     libbatching \
-    libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
@@ -1135,7 +1129,6 @@ PRODUCT_PACKAGES += \
     libeepromcutter \
     libembmsservice \
     libengineplugin \
-    libfaceid_ca_proxy.arcsoft \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
@@ -1863,5 +1856,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-PRODUCT_PACKAGES += face-lenovo.xml
