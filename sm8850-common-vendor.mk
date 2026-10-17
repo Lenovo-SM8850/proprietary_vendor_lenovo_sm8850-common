@@ -1363,6 +1363,7 @@ PRODUCT_PACKAGES += \
     com.google.android.widevine-13130248 \
     ConnectionSecurityService \
     TimeService \
+    PowerOffAlarm \
     WfdService \
     WfdCommon \
     Manifest_IListenSoundModel.xml \
