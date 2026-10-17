@@ -1640,6 +1640,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk-system \
     com.google.android.widevine-13130248 \
     ConnectionSecurityService \
+    PowerOffAlarm \
     WfdService \
     WfdCommon \
     Manifest_IListenSoundModel.xml \
