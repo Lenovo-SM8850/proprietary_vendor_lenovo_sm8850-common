@@ -253,7 +253,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.extend_reclaim.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.extend_reclaim.rc \
-    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.qlm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qlm-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.qt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qt-service.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
@@ -1728,7 +1727,6 @@ PRODUCT_PACKAGES += \
     qesdk-manager \
     qesdk-secmanager \
     qguard \
-    qlm-service \
     qmipriod \
     qrtr-cfg \
     qrtr-lookup \
