@@ -8236,7 +8236,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libbinder",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "vendor.display.config@1.0",
                 "libhidlbase",
                 "libc++",
