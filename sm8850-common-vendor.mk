@@ -656,6 +656,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/ssg/c2pa_network_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/c2pa_network_config.json \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/sv/mldfs/mldfs_dyn.dat:$(TARGET_COPY_OUT_VENDOR)/etc/sv/mldfs/mldfs_dyn.dat \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/thermal-engine_fan_0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_fan_0.conf \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/thermal-engine_gpu_0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_gpu_0.conf \
@@ -1070,6 +1071,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
     libbtnv \
+    libcacertclient \
     libcamxifestriping \
     libcamxjumbfcomposer \
     libcamxncsdatafactory \
@@ -1490,6 +1492,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar-V1-ndk \
     vendor.qti.hardware.bttpi-V3-ndk \
     vendor.qti.hardware.c2pa-V1-ndk \
+    vendor.qti.hardware.cacertaidlservice-V1-ndk \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.capabilityconfigstore-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
@@ -1640,13 +1643,16 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
+    vendor.qti.hardware.cacertaidlservice-V1-ndk \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     com.google.android.widevine-13130248 \
+    CACertService \
     ConnectionSecurityService \
     PowerOffAlarm \
     WfdService \
     WfdCommon \
+    vendor.qti.hardware.cacertaidlservice-V1-java \
     Manifest_IListenSoundModel.xml \
     android.hardware.drm-service.xml \
     android.hardware.gatekeeper-service-qti.xml \
@@ -1665,6 +1671,7 @@ PRODUCT_PACKAGES += \
     bttpi-saidl.xml \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
+    cacert-saidl.xml \
     fm_hci.xml \
     manifest_btaudiocoreservices_qti.xml \
     qasr_vintf.xml \

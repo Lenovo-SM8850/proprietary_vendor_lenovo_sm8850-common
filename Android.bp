@@ -3638,6 +3638,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcacertclient",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcacertclient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "libbase",
+                "libbinder_ndk",
+                "vendor.qti.hardware.cacertaidlservice-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcamxifestriping",
     owner: "lenovo",
     strip: {
@@ -15441,6 +15472,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.cacertaidlservice-V1-ndk",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.camera.offlinecamera-service-impl",
     owner: "lenovo",
     strip: {
@@ -19680,6 +19736,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.cacertaidlservice-V1-ndk",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.wifidisplaysession@1.0",
     owner: "lenovo",
     strip: {
@@ -19742,6 +19823,17 @@ prebuilt_apex {
 }
 
 android_app_import {
+    name: "CACertService",
+    owner: "lenovo",
+    apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
     name: "ConnectionSecurityService",
     owner: "lenovo",
     apk: "proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk",
@@ -19782,6 +19874,15 @@ dex_import {
     jars: [
         "proprietary/system/framework/WfdCommon.jar",
     ],
+}
+
+dex_import {
+    name: "vendor.qti.hardware.cacertaidlservice-V1-java",
+    owner: "lenovo",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.hardware.cacertaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -19941,6 +20042,15 @@ prebuilt_etc_xml {
     name: "c2_manifest_vendor_audio.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "cacert-saidl.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/cacert-saidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
