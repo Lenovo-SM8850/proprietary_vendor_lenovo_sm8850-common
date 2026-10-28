@@ -19736,7 +19736,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.cacertaidlservice-V1-ndk",
+    name: "vendor.qti.hardware.cacertaidlservice-V1-ndk-system",
+    stem: "vendor.qti.hardware.cacertaidlservice-V1-ndk",
     owner: "lenovo",
     strip: {
         none: true,

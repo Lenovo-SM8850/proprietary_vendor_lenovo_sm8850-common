@@ -1643,7 +1643,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
-    vendor.qti.hardware.cacertaidlservice-V1-ndk \
+    vendor.qti.hardware.cacertaidlservice-V1-ndk-system \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     com.google.android.widevine-13130248 \
