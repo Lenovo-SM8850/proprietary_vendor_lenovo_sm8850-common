@@ -660,6 +660,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/sv/mldfs/mldfs_dyn.dat:$(TARGET_COPY_OUT_VENDOR)/etc/sv/mldfs/mldfs_dyn.dat \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/thermal-engine_cpu_5.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_5.conf \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/thermal-engine_cpu_7.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_7.conf \
@@ -1641,6 +1642,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk-system \
     com.google.android.widevine-13130248 \
+    CACertService \
     ConnectionSecurityService \
     TimeService \
     PowerOffAlarm \
@@ -1663,6 +1665,7 @@ PRODUCT_PACKAGES += \
     bt_lmp_event-saidl.xml \
     bttpi-saidl.xml \
     c2_manifest_vendor_audio.xml \
+    cacert-saidl.xml \
     fm_hci.xml \
     manifest_btaudiocoreservices_qti.xml \
     qasr_vintf.xml \
@@ -1898,8 +1901,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
-    vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
-    vendor/lenovo/sm8850-common/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk-system \
@@ -1928,7 +1930,6 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TxPwrAdmin \
     ImsRtpService-aidl.xml \
-    cacert-saidl.xml \
     datafactoryservice-saidl.xml \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \

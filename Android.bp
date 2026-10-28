@@ -20251,6 +20251,17 @@ prebuilt_apex {
 }
 
 android_app_import {
+    name: "CACertService",
+    owner: "lenovo",
+    apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
     name: "ConnectionSecurityService",
     owner: "lenovo",
     apk: "proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk",
@@ -20452,6 +20463,15 @@ prebuilt_etc_xml {
     name: "c2_manifest_vendor_audio.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "cacert-saidl.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/cacert-saidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -25031,15 +25051,6 @@ prebuilt_etc_xml {
     name: "ImsRtpService-aidl.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/ImsRtpService-aidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "cacert-saidl.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/cacert-saidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
