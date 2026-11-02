@@ -1654,6 +1654,7 @@ PRODUCT_PACKAGES += \
     libmmrtpdecoder \
     libmmrtpencoder \
     libqti-perfd-client_system \
+    libtrigger-handler \
     libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
@@ -1674,6 +1675,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.cacertaidlservice-V1-ndk-system \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
+    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal@1.0 \
+    vendor.qti.snapdragonServices-V2-ndk \
     com.google.android.widevine-13130248 \
     CACertService \
     ConnectionSecurityService \
