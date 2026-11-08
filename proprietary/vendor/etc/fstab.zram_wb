@@ -1,2 +1,0 @@
-/dev/block/zram0                                        none                   swap    defaults                                             zramsize=110%,zram_backingdev_size=prop
-
