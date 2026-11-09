@@ -246,7 +246,7 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libprocessgroup",
                 "libbinder",
-                "vendor.qti.hardware.vpp-V1-ndk",
+                "vendor.qti.hardware.vpp-V1-ndk-system",
                 "libbinder_ndk",
                 "libgpppreprocessing",
                 "libGLESv2",
@@ -20873,7 +20873,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.vpp-V1-ndk",
+    name: "vendor.qti.hardware.vpp-V1-ndk-system",
+    stem: "vendor.qti.hardware.vpp-V1-ndk",
     owner: "lenovo",
     strip: {
         none: true,

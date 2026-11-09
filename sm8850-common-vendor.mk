@@ -1683,7 +1683,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.hardware.cacertaidlservice-V1-ndk-system \
-    vendor.qti.hardware.vpp-V1-ndk \
+    vendor.qti.hardware.vpp-V1-ndk-system \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.qspmhal-V1-ndk-system \
