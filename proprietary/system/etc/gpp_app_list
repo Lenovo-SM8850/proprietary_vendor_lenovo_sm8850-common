@@ -1,0 +1,81 @@
+#!
+# @file gpp_app_list
+#
+# @cr
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# All rights reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+# @services
+#
+# game package name, there must be no extra spaces at the end of each line
+com.YourCompany.srgb
+com.ztgame.bob
+com.tencent.ig
+com.tencent.tmgp.sgame
+com.levelinfinite.sgameGlobal
+com.tencent.tmgp.pubgmhd
+com.miHoYo.Yuanshen
+com.miHoYo.GenshinImpact
+com.activision.callofduty.shooter
+com.HoYoverse.hkrpgoversea
+com.miHoYo.hkrpg
+com.HoYoverse.Nap
+com.tencent.tmgp.cod
+com.tencent.tmgp.cf
+com.tencent.jkchess
+com.tencent.KiHan
+com.tencent.lolm
+com.tencent.mf.uam
+com.proximabeta.mf.uamo
+com.netease.party
+com.tencent.tmgp.wdsj666
+com.tencent.tmgp.dfjs
+com.tencent.tmgp.xxajh
+com.tencent.tmgp.eyou.tiyu
+com.netease.nshm
+com.tencent.tmgp.dfm
+com.netease.party.lenovo
+com.netease.party.mi
+com.netease.party.kuaishou
+com.miHoYo.ys.bilibili
+com.tencent.tmgp.speedmobile
+com.sofunny.Sausage
+com.tencent.tmgp.WePop
+com.tencent.tmgp.dnf
+com.kurogame.mingchao
+com.kurogame.mingchao.bilibili
+com.kurogame.wutheringwaves.global
+com.kurogame.mingchao.bytedance.gamecenter
+com.tencent.letsgo
+com.miHoYo.Nap
+com.netease.l22
+com.netease.dwrg
+com.netease.dwrg.lenovo
+com.netease.dwrg.huawei
+com.netease.dwrg.aligames
+com.netease.dwrg.yixin
+com.netease.dwrg.baidu
+com.hypergryph.arknights
+com.hypergryph.arknights.bilibili
+com.YoStarKR.Arknights
+com.netease.sky
+com.tencent.tmgp.eyou.eygy
+com.miHoYo.enterprise.NGHSoD
+com.netease.yyslscn
+com.netease.yyslscn.huawei
+com.pubg.krmobile
+com.rekoo.pubgm
+com.tencent.iglite
+com.tencent.tmgp.djsy
+com.tencent.tmgp.supercell.clashofclans
+com.papegames.lysk.cn
+com.papegames.lysk.tw
+com.qqgame.hlddz
+com.tencent.fifamobile
+com.tencent.tmgp.projectg
+com.tencent.tmgp.supercell.boombeach
+com.dragonli.projectsnow.lhm
+cn.jj
+com.tencent.tmgp.luobo4
+com.Sunborn.SnqxExilium
+

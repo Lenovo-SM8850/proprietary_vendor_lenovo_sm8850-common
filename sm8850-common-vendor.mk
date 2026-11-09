@@ -89,6 +89,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/odm/lib64/outconvfiltcoeffcq2x2.bin:$(TARGET_COPY_OUT_ODM)/lib64/outconvfiltcoeffcq2x2.bin \
     vendor/lenovo/sm8850-common/proprietary/odm/lib64/outconvfiltcoeffcq4x4.bin:$(TARGET_COPY_OUT_ODM)/lib64/outconvfiltcoeffcq4x4.bin \
     vendor/lenovo/sm8850-common/proprietary/odm/lib64/outconvfiltcoeffqpd4x4.bin:$(TARGET_COPY_OUT_ODM)/lib64/outconvfiltcoeffqpd4x4.bin \
+    vendor/lenovo/sm8850-common/proprietary/system/etc/gpp_app_list:$(TARGET_COPY_OUT_SYSTEM)/etc/gpp_app_list \
+    vendor/lenovo/sm8850-common/proprietary/system/etc/init/gppservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/gppservice.rc \
+    vendor/lenovo/sm8850-common/proprietary/system/etc/seccomp_policy/gppservice.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/gppservice.policy \
     vendor/lenovo/sm8850-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/lenovo/sm8850-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/lenovo/sm8850-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
@@ -946,6 +949,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libdolbyeffect \
     libdolbyui-system \
+    libgppclient \
+    libgppextension \
+    libgpphexlpsession \
+    libgpppreprocessing \
+    libgpptxr \
+    libgppvppgfrcplussession \
+    vendor.qti.hardware.hexlp-V3-ndk \
     vendor.qti.hardware.perf2-V1-ndk-system \
     c2.dolby.client \
     c2.dolby.store \
@@ -1673,6 +1683,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.hardware.cacertaidlservice-V1-ndk-system \
+    vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.qspmhal-V1-ndk-system \
@@ -1749,6 +1760,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
+    gppservice \
     C2PAInternetService \
     adsprpcd \
     cdsprpcd \
