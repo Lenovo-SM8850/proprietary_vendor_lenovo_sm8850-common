@@ -17,3 +17,16 @@ service vendor.gppservice /system/bin/gppservice
 #on property:vendor.gpp.frc.enable=0x22
 #    start vendor.gppservice
 
+
+on property:vendor.gpp.reload=1
+    restart vendor.gppservice
+    setprop vendor.gpp.reload 0
+
+on post-fs-data
+    mkdir /data/misc/lenovo-gpp 0770 system system
+    copy /system/etc/gpp_app_list /data/misc/lenovo-gpp/list
+    chown system system /data/misc/lenovo-gpp/list
+    chmod 0660 /data/misc/lenovo-gpp/list
+    restorecon /data/misc/lenovo-gpp
+    restorecon /data/misc/lenovo-gpp/list
+    mount none /data/misc/lenovo-gpp/list /system/etc/gpp_app_list bind
