@@ -8,7 +8,6 @@ service battery_aidl_service /vendor/bin/hw/vendor.lenovo.hardware.battery-servi
 # 0: none; 13: red 14: blue; 12: green
 on charger
     setprop vendor.lenovo.battery.charge_only_mode 1
-
 on property:vendor.lenovo.battery.charge_only_mode=1 && property:vendor.lenovo.battery.charge_only_led_color=*
     write /sys/class/leds/aw22xxx_led/effect ${vendor.lenovo.battery.charge_only_led_color}
     write /sys/class/leds/aw22xxx_led/cfg 1

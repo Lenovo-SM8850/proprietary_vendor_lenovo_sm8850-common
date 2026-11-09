@@ -824,8 +824,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/6_on.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/6_on.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/7_aduio.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/7_aduio.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/8_strobe.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/8_strobe.bin \
-    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/9_flicker_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_blue.bin \
-    vendor/lenovo/sm8850-common/proprietary/vendor/firmware/9_flicker_whilte.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_whilte.bin \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b03 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b05 \
     vendor/lenovo/sm8850-common/proprietary/vendor/firmware/CAMERA_ICP.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b06 \
@@ -1086,7 +1084,6 @@ PRODUCT_PACKAGES += \
     libcdfw_remote_api \
     libcdsp_default_listener \
     libcdsprpc \
-    libcenterface \
     libcert_parse.wpa_s \
     libchilog \
     libclstc_algorithm_adapter \
@@ -1232,7 +1229,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpat_uint8 \
     libpdmapper \
     libpdnotifier \
     libperf-thermalprovider \
@@ -1248,7 +1244,6 @@ PRODUCT_PACKAGES += \
     libprocomp \
     libproj_qmot_tracker \
     libproj_sot \
-    libptq_uint8 \
     libq-perflog \
     libqasr \
     libqc2audio_base \
@@ -1625,6 +1620,7 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libmctfengine_skel_so \
     vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     libmmparserextractor \
+    libSurfaceUtil_jni \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
@@ -1647,7 +1643,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk-system \
+    vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     com.google.android.widevine-13130248 \
     ConnectionSecurityService \
     PowerOffAlarm \
