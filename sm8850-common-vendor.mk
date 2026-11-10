@@ -943,6 +943,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/rfs/rfs_symlinks:$(TARGET_COPY_OUT_VENDOR)/rfs/rfs_symlinks
 
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf2-V1-ndk \
     com.qti.sensor.imx481 \
     com.qti.sensor.imx563 \
     com.qti.sensor.imx576 \
@@ -1626,6 +1627,7 @@ PRODUCT_PACKAGES += \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
+    libqti-perfd-client_system \
     libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
