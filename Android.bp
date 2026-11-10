@@ -189,6 +189,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/c2.dolby.vision.dec.so",
             ],
             shared_libs: [
+                "libcodec2_shim",
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "libcodec2_hal_common",
@@ -224,6 +225,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -240,6 +242,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/c2.dolby.vision.sec.dec.so",
             ],
             shared_libs: [
+                "libcodec2_shim",
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "libcodec2_hal_common",
@@ -275,6 +278,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
