@@ -1202,7 +1202,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_common \
     liblowi_wifihal \
-    libmcs \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
