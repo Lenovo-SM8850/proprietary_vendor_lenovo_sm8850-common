@@ -192,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/audio/sku_canoe/audio_effects_config_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/audio_effects_config_stub.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/avf/early_vms_oem_vm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/avf/early_vms_oem_vm.xml \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/avf/early_vms_trusted_vm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/avf/early_vms_trusted_vm.xml \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/bpf/qmsUidStats.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/qmsUidStats.o \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/configstore/wigig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/wigig.xml \
@@ -281,6 +282,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/init/snapdragon_services.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snapdragon_services.rc \
@@ -560,6 +562,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
+    vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qsap_mpamsvc.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_mpamsvc.policy \
     vendor/lenovo/sm8850-common/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
@@ -1323,6 +1326,12 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
+    libqms \
+    libqms_client \
+    libqms_coex_sdk \
+    libqms_optimized_route_mgr_sdk \
+    libqms_packetstats_sdk \
+    libqms_sdf_sdk \
     libqrtr \
     libqrtrclient \
     libqseed3 \
@@ -1707,6 +1716,7 @@ PRODUCT_PACKAGES += \
     manifest_btaudiocoreservices_qti.xml \
     qasr_vintf.xml \
     qesdk-manager.xml \
+    qms-saidl.xml \
     qspa-modem.xml \
     qspa-nav.xml \
     snapdragon_services.xml \
@@ -1816,6 +1826,7 @@ PRODUCT_PACKAGES += \
     qesdk-secmanager \
     qguard \
     qmipriod \
+    qms \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
